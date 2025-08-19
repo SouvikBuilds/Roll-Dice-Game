@@ -5,7 +5,7 @@ const StartGame = ({ toggle }) => {
     return (
         <div className='flex flex-col lg:flex-row items-center justify-center mt-[5%] px-4 lg:px-0'>
             <div className='w-full max-w-[649px] lg:w-[649px] h-auto lg:h-[522px] my-auto mb-8 lg:mb-0'>
-                <img src="public/images/dices.png" alt="Dice" className='w-full h-auto' />
+                <img src="/images/dices.png" alt="Dice" className='w-full h-auto' />
             </div>
             <div className='flex flex-col justify-center items-center lg:items-end w-full max-w-[528px] lg:w-[528px] gap-2 text-center lg:text-right'>
                 <h2 className='text-4xl sm:text-5xl lg:text-7xl font-bold'>
