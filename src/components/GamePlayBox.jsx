@@ -13,13 +13,13 @@ const GamePlayBox = () => {
     const [isRuleVisible, setIsRuleVisible] = useState(false)
 
     const rollDice = () => {
-        const randomIndex = Math.floor(Math.random() * diceImages.length)
-        setDiceImage(randomIndex)
-
         if (!number) {
             alert("Please Select a Number First")
             return
         }
+        const randomIndex = Math.floor(Math.random() * diceImages.length)
+        setDiceImage(randomIndex)
+
         if (number === randomIndex + 1) {
             setTotalScore(prev => prev + (randomIndex + 1));
         } else {
