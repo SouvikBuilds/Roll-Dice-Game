@@ -4,7 +4,7 @@ const GamePlayBox = () => {
     const numbers = [1, 2, 3, 4, 5, 6]
     const diceImages = []
     for (let i = 0; i < numbers.length; i++) {
-        diceImages.push(`./images/dice_${numbers[i]}.png`)
+        diceImages.push(`/images/dice_${numbers[i]}.png`)
     }
 
     const [number, setNumber] = useState(null)
