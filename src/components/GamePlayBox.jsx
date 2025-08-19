@@ -14,18 +14,20 @@ const GamePlayBox = () => {
 
     const rollDice = () => {
         if (!number) {
-            alert("Please Select a Number First")
-            return
+            alert("Please Select a Number First");
+            return; // ⬅️ stop execution fully
         }
-        const randomIndex = Math.floor(Math.random() * diceImages.length)
-        setDiceImage(randomIndex)
+
+        const randomIndex = Math.floor(Math.random() * diceImages.length);
+        setDiceImage(randomIndex);
 
         if (number === randomIndex + 1) {
             setTotalScore(prev => prev + (randomIndex + 1));
         } else {
             setTotalScore(prev => prev - 2);
         }
-    }
+    };
+
 
     const resetScore = () => {
         setTotalScore(0)
